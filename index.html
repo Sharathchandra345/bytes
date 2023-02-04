@@ -2,44 +2,97 @@
 <html>
   <head>
     <title>Thapar Mess Management</title>
-    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
     <header>
-            <h1>Mess Management</h1>
+      <img src="img/logo.png" alt="Thapar Mess Management Logo" style="float:left; width:150px; height: 80px;">
+      <h1 style="margin-left:35px;" align="center;">Thapar Mess Management</p>
     </header>
     <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="#profile">Profile</a></li>
-          <li><a href="#full-menu">Full Menu</a></li>
-          <li><a href="feedback.html">Feedback</a></li>
-          <li><a href="contacts.html">Contacts Info.</a></li>
-        </ul>
-      </nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#profile">Profile</a></li>
+        <li><a href="#full-mess-menu">Full Mess Menu</a></li>
+        <li><a href="feedback.html">Feedback</a></li>
+        <li><a href="contacts.html">Contacts</a></li>
+      </ul>
+    </nav>
     <main>
 
-        <section>
-            <h2>Today's Menu</h2>
-            <table>
-                <tr>
-                    <th>Meal</th>
-                   <th>Items</th>
-                </tr>
-                <tr>
-                    <td>Breakfast</td>
-                    <td>Paratha, Chole, Salad</td>
-                </tr>
-                <tr>
-                    <td>Lunch</td>
-                    <td>Chicken Curry, Rice, Salad</td>
-                </tr>
-                <tr>
-                    <td>Dinner</td>
-                    <td>Beef Stir Fry, Noodles, Soup</td>
-                </tr>
-            </table>
-        </section>
+        <section id="Quotations">
+            <h1>Quote Of The Day</h1>
+           <p> “To me, its sort of funny that wasting food is not taboo. Its one of the last environmental ills that you can just get away with.” - Jonathan Bloom </h4> 
+         </section>
+       
+      <section>
+        <h2>Today's Menu</h2>
+        <table>
+            <tr>
+                <th>Meal</th>
+               <th>Items</th>
+            </tr>
+            <tr>
+                <td>Breakfast</td>
+                <td>Paratha, Chole, Salad</td>
+            </tr>
+            <tr>
+                <td>Lunch</td>
+                <td>Chicken Curry, Rice, Salad</td>
+            </tr>
+            <tr>
+                <td>Dinner</td>
+                <td>Beef Stir Fry, Noodles, Soup</td>
+            </tr>
+        </table>
+    </section>
+    <style>
+        .eat-btn {
+          background-color: green;
+          color: white;
+          padding: 10px 20px;
+          border-radius: 5px;
+          text-align: center;
+        }
+        .not-eat-btn {
+          background-color: red;
+          color: white;
+          padding: 10px 20px;
+          border-radius: 5px;
+          text-align: center;
+        }
+      </style>
+      
+      <section id="menu">
+        <h2>Today's Menu</h2>
+        <div style="display: flex;">
+          <div style="flex: 1; padding: 10px;">
+            <p>Breakfast: Lorem ipsum dolor sit amet</p>
+            <div>
+              <button class="eat-btn" id="eat_breakfast" name="meal_choice" value="eat_breakfast">I will Eat Breakfast</button><br>
+              <button class="not-eat-btn" id="not_eat_breakfast" name="meal_choice" value="not_eat_breakfast">I will Not Eat Breakfast</button><br>
+            </div>
+          </div>
+          <div style="flex: 1; padding: 10px;">
+            <p>Lunch: Chicken Curry, Rice, Salad</p>
+            <div>
+              <button class="eat-btn" id="eat_lunch" name="meal_choice" value="eat_lunch">I will Eat Lunch</button><br>
+              <button class="not-eat-btn" id="not_eat_lunch" name="meal_choice" value="not_eat_lunch">I will Not Eat Lunch</button><br>
+            </div>
+          </div>
+          <div style="flex: 1; padding: 10px;">
+            <p>Dinner: Beef Stir Fry, Noodles, Soup</p>
+            <div>
+              <button class="eat-btn" id="eat_dinner" name="meal_choice" value="eat_dinner">I will Eat Dinner</button><br>
+              <button class="not-eat-btn" id="not_eat_dinner" name="meal_choice" value="not_eat_dinner">I will Not Eat Dinner</button><br>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      
+    
+    
       <section id="schedule">
         <h2>Meal Schedule</h2>
         <table>
