@@ -1,124 +1,65 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #F5F5F5;
-}
-
-header {
-    background-color: #6CA0DC;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-}
-
-nav {
-    background-color: #7FC7AF;
-    padding: 10px;
-    text-align: center;
-}
-
-nav ul {
-    display: inline-block;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-nav li {
-    display: inline-block;
-    margin: 0 10px;
-}
-
-nav a {
-    color: #333;
-    text-decoration: none;
-}
-
-nav a:hover {
-    color: #fff;
-}
-
-main {
-    padding: 20px;
-}
-
-section {
-    background-color: #E5F8E0;
-    padding: 20px;
-    margin-bottom: 20px;
-}
-
-h2 {
-    margin-top: 0;
-    color: #6CA0DC;
-}
-
-table {
-    width: 100%;
-    border-collapse: collapse;
-}
-
-th, td {
-    border: 1px solid #ddd;
-    padding: 8px;
-    text-align: left;
-}
-
-th {
-    background-color: #7FC7AF;
-    color: #fff;
-}
-
-form {
-    width: 50%;
-    margin: 0 auto;
-    text-align: left;
-}
-
-label, input, textarea {
-    display: block;
-    margin: 10px 0;
-}
-
-label {
-    font-weight: bold;
-}
-
-input[type="text"], input[type="email"] {
-    width: 100%;
-    padding: 10px;
-    font-size: 16px;
-    box-sizing: border-box;
-    background-color: #E5F8E0;
-}
-
-textarea {
-    width: 100%;
-    padding: 10px;
-    font-size: 16px;
-    box-sizing: border-box;
-    resize: vertical;
-    background-color: #E5F8E0;
-}
-
-input[type="submit"] {
-    background-color: #6CA0DC;
-    color: #fff;
-    padding: 10px 20px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-}
-
-input[type="submit"]:hover {
-    background-color: #fff;
-    color: #6CA0DC;
-}
-
-footer {
-    background-color: #6CA0DC;
-    color: #fff;
-    padding: 10px;
-    text-align: center;
-}
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Thapar Mess Management</title>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+  </head>
+  <body>
+    <header>
+      <h1>Mess Management</h1>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#profile">Profile</a></li>
+        <li><a href="#full-menu">Full Menu</a></li>
+        <li><a href="#feedback">Feedback</a></li>
+      </ul>
+    </nav>
+    <main>
+       
+      <section id="menu">
+        <h2>Today's Menu</h2>
+        <p>Breakfast: Lorem ipsum dolor sit amet</p>
+        <p>Lunch: Chicken Curry, Rice, Salad</p>
+        <p>Dinner: Beef Stir Fry, Noodles, Soup</p>
+      </section>
+      <section id="schedule">
+        <h2>Meal Schedule</h2>
+        <table>
+          <tr>
+            <th>Meal</th>
+            <th>Time</th>
+          </tr>
+          <tr>
+            <td>Breakfast</td>
+            <td>7:30 AM - 9:00 AM</td>
+          </tr>
+          <tr>
+            <td>Lunch</td>
+            <td>12:30 PM - 2:00 PM</td>
+          </tr>
+          <tr>
+            <td>Dinner</td>
+            <td>7:30 PM - 9:00 PM</td>
+          </tr>
+        </table>
+      </section>
+      <section id="feedback">
+        <h2>Leave Feedback</h2>
+        <form>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" required></textarea>
+          <input type="submit" value="Submit">
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p>Copyright © 2023 Mess Management</p>
+    </footer>
+  </body>
+</html>
